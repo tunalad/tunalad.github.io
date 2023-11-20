@@ -1,0 +1,113 @@
+{{ partial "header.html" . }}
+<!--{{ partial "tag.html" }}-->
+<main>
+    <ul class="tags">
+        <li><a href="javascript:void(0)" onclick="removeHash()">all</a></li>
+        {{ range site.Taxonomies.tags }}
+        <li><a href="#{{.Page.Title}}">{{ .Page.Title }}</a></li>
+        {{ end }}
+    </ul>
+    <ul class="projects">
+        {{ $pages := .Pages }} {{ if .IsHome }} {{ $pages = .Site.RegularPages
+        }} {{ end }} {{ range (where $pages "Section" "!=" "").ByWeight }}
+        <li
+            class="project {{ if .Params.notable }}notable-border{{end}}"
+            data-tags="{{ .Params.tags | jsonify }}"
+        >
+            {{ if .Params.notable }}
+            <div class="notable"><small>notable</small></div>
+            {{end}}
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a
+            ><span class="project-type">[{{ delimit .Params.tags ", " }}]</span>
+            <hr />
+            <p>{{ .Params.description }}</p>
+            <ul class="tech-list">
+                {{ range .Params.tech }}
+                <li class="tech-item">
+                    {{ . }}<!--</li>-->
+                    {{end}}
+                </li>
+            </ul>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ partial "footer.html" . }}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Call the function on page load and when the hash changes
+        setActiveLink(window.location.hash);
+        window.addEventListener("hashchange", function () {
+            setActiveLink(window.location.hash);
+        });
+
+        // Add is-active class to the "all" link on page load
+        var allLinks = document.querySelectorAll(".tags a");
+        allLinks.forEach(function (link) {
+            if (link.textContent.trim().toLowerCase() === "all") {
+                link.classList.add("is-active");
+            }
+        });
+    });
+
+    function setActiveLink(hash) {
+        // Remove is-active class from all links in the .tags class
+        var allLinks = document.querySelectorAll(".tags a");
+        allLinks.forEach(function (link) {
+            link.classList.remove("is-active");
+        });
+
+        if (typeof hash === "undefined") {
+            // If no hash is passed, remove filtering and add is-active class to the "all" element
+            var allProjects = document.querySelectorAll(
+                ".projects li[data-tags]",
+            );
+            allProjects.forEach(function (project) {
+                project.style.display = "block";
+            });
+
+            // Add is-active class to the "all" element
+            var allLinks = document.querySelectorAll(".tags a");
+            allLinks.forEach(function (link) {
+                if (link.textContent.trim().toLowerCase() === "all") {
+                    link.classList.add("is-active");
+                }
+            });
+        } else {
+            // If a hash is passed, apply highlighting and filtering
+            var currentPath = hash.substr(1); // Get the path without the "#" symbol
+
+            // Add is-active class to the link corresponding to the current path
+            var activeLink = document.querySelector(
+                '.tags a[href="#' + currentPath + '"]',
+            );
+            if (activeLink) {
+                activeLink.classList.add("is-active");
+
+                var allProjects = document.querySelectorAll(
+                    ".projects li[data-tags]",
+                );
+                allProjects.forEach(function (project) {
+                    var tagsString = project.getAttribute("data-tags");
+                    var tagsArray = JSON.parse(tagsString);
+                    if (tagsArray.includes(currentPath)) {
+                        project.style.display = "block";
+                    } else {
+                        project.style.display = "none";
+                    }
+                });
+            }
+        }
+    }
+
+    function removeHash() {
+        history.replaceState(
+            null,
+            document.title,
+            window.location.pathname + window.location.search,
+        );
+
+        setActiveLink();
+    }
+</script>

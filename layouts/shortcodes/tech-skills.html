@@ -1,0 +1,6 @@
+<ul class="tech-skills {{ .Get 0 }}">
+    {{ $trimmedInner := trim .Inner "\n" }} {{ if ne $trimmedInner "" }} {{
+    range split $trimmedInner "\n" }} {{ if ne . "\n" }}
+    <li>{{ . }}</li>
+    {{ end }} {{ end }} {{ end }}
+</ul>

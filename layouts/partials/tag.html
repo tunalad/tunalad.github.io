@@ -1,0 +1,14 @@
+{{ $currentPage := page.Name }}
+<ul class="tags">
+    {{ range site.Taxonomies.tags }}
+    <li>
+        {{ if eq $currentPage .Page.Name }}
+        <a class="is-active" href="{{ .Page.Permalink }}"
+            >[{{ .Page.Title }}]</a
+        >
+        {{ else }}
+        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>

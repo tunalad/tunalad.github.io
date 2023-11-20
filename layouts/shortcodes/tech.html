@@ -1,0 +1,8 @@
+{{- $tags := .Page.Params.tech -}}
+{{- if $tags -}}
+ <ul class="project-tech">
+   {{ range $tags }}
+     <li>{{ . }}</li>
+   {{ end }}
+ </ul>
+{{- end -}}

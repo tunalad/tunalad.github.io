@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<main>
+    <h1 class="post-header">
+        {{ .Title }}<sup>[{{ delimit .Params.tags ", " }}]</sup>
+    </h1>
+    <div style="text-align: center">
+        <!--<span>[{{ delimit .Params.tags ", " }}]</span> | 
+        <a href="{{ .Params.github }}">GitHub</a> |
+        <a href="{{ .Params.live }}">Live</a>-->
+
+        <div>
+            [ <a href="{{ .Params.github }}" target="_blank">GitHub</a> {{ if
+            .Params.live }} |
+            <a href="{{ .Params.live }}" target="_blank">Live</a>
+            {{ end }}]
+        </div>
+
+        <ul class="tech-list">
+            {{ range .Params.tech }}
+            <li class="tech-item">{{ . }} {{end}}</li>
+        </ul>
+    </div>
+    {{ .Content }}
+</main>
+
+{{ partial "footer.html" . }}

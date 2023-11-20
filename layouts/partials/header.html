@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ .Title }} | {{ .Site.Title }}</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/skills.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/menu.css" />
+    </head>
+
+    <body>
+        <!--<h1 class="site-title">{{.Site.Title}}</h1>-->
+        {{ $currentPage := .Name }}
+        <nav>
+            <ul class="menu">
+                [ {{ range .Site.Menus.main }}
+                <li>
+                    <a
+                        class="{{ if eq $currentPage .Name }}is-active{{end}}"
+                        href="{{ .URL | relURL }}"
+                        >{{ .Name }}</a
+                    >
+                </li>
+                <li>|</li>
+                {{ end }}
+                <li>
+                    <a href="{{ .Site.Params.contact }}">Contact</a>
+                </li>
+                ] {{ if .Site.Params.lightswitch }} {{ partial
+                "lightswitch.html" }} {{ end }}
+            </ul>
+            <hr />
+        </nav>
+    </body>
+</html>

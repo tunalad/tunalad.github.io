@@ -1,0 +1,46 @@
+/* skill boxes */
+
+.tech-skills {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.tech-skills li {
+    display: inline-flex;
+    align-items: center; /* Center vertically */
+    vertical-align: middle; /* Vertical alignment */
+    margin: 2px;
+    padding: 2px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* level colors */
+#basic {
+    color: var(--nord-light2);
+}
+.lv-bas li {
+    border-color: var(--nord-light2);
+}
+
+#intermediate {
+    color: var(--nord-blue3);
+}
+.lv-mid li {
+    border-color: var(--nord-blue3);
+}
+
+#advanced {
+    color: var(--nord-green);
+}
+.lv-adv li {
+    border-color: var(--nord-green);
+}

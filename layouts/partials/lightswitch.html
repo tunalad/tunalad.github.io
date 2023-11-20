@@ -1,0 +1,25 @@
+<button id="lsw">☀️</button>
+
+<script>
+    var button = document.getElementById("lsw");
+    var theme = localStorage.getItem("theme");
+
+    if (theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        button.innerHTML = "🌑";
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    button.addEventListener("click", function () {
+        if (button.innerHTML === "☀️") {
+            document.documentElement.setAttribute("data-theme", "dark");
+            button.innerHTML = "🌑";
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+            button.innerHTML = "☀️";
+            localStorage.setItem("theme", "light");
+        }
+    });
+</script>

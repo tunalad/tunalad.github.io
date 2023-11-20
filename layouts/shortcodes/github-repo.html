@@ -1,0 +1,9 @@
+{{ $repo:= .Get 0 }} {{- $resp := getJSON (printf
+"https://api.github.com/repos/%s" $repo) -}}
+<div class="github-repo">
+    <h2>
+        <a href="{{ $resp.html_url }}">{{ $resp.name }}</a>
+    </h2>
+    <p>{{ $resp.description }}</p>
+    <small>{{ $resp.language }}</small>
+</div>

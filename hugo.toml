@@ -1,0 +1,36 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New EPIC Hugo Site'
+
+
+[params]
+    lightswitch = false
+    footer = "&copy; asd {Year}"
+    contact = "mailto:arsic.novica00@gmail.com"
+
+[taxonomies]
+    tag = "tags"
+    tech = "tech"
+
+[permalinks]
+    tags = "/tags/:slug/"
+
+#theme = "hugo-classic"
+#theme = "no-style-please"
+#theme = "kaslaanka"
+#theme = "tunalad-portfolio"
+#theme = "hugo-xmin"
+#theme = "hugo-xterm"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 20
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 30
