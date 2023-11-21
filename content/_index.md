@@ -3,11 +3,13 @@ title = 'Home'
 date = 2023-11-03T00:34:14+01:00
 +++
 
-# Hi, I'm Novica
+# Hello, I'm Novica
 
 {{< small "Full Stack Developer" >}}
 
-Dedicated to my work as a developer, this website offers an expanded resume, providing a deep dive into my development projects and skills, as well as my approach to writing code. It's designed to complement the standard resume I send when applying for jobs.
+Purpose of this website is to be like slightly expanded resume, showcasing my projects and mentioning a little bit about myself.
+
+Another plan for this site is to have like a "blogging" section. It won't necessarily be like actual blogging, but some minor Linux setting up or something like cheatsheets for some programming tools.
 
 ---
 
