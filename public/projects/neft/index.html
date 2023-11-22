@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>NeFT | My New EPIC Hugo Site</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/skills.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/menu.css" />
+    </head>
+
+    <body>
+        
+        
+        <nav>
+            <ul class="menu">
+                [ 
+                <li>
+                    <a
+                        class=""
+                        href="/"
+                        >Home</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/about"
+                        >About</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/projects"
+                        >Projects</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a href="mailto:arsic.novica00@gmail.com">Contact</a>
+                </li>
+                ] 
+            </ul>
+            <hr />
+        </nav>
+    </body>
+</html>
+
+
+<main>
+    <h1 class="post-header">
+        NeFT<sup>[tui, cli]</sup>
+    </h1>
+    <div style="text-align: center">
+        
+
+        <div>
+            [ <a href="https://github.com/tunalad/" target="_blank">GitHub</a> ]
+        </div>
+
+        <ul class="tech-list">
+            
+            <li class="tech-item">python </li>
+        </ul>
+    </div>
+    <p>NeFT (<strong>Ne</strong>w <strong>F</strong>rom <strong>T</strong>emplate) is a simple command-line tool that allows you to create new files using pre-made templates.</p>
+<p>I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the <code>Create New</code> option in GUI file managers.</p>
+<h2 id="1-usage">1. Usage</h2>
+<p>NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences. Additionally, NeFT provides other functionalities like enabling loop mode, specifying a configuration file path, and setting the output location.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NeFT - New From Template - Create files from pre-defined templates.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>options:
+</span></span><span style="display:flex;"><span>  -h, --help            show this help message and exit
+</span></span><span style="display:flex;"><span>  -i, --icons           draw icons in the menu
+</span></span><span style="display:flex;"><span>  -l, --loop            enable loop mode
+</span></span><span style="display:flex;"><span>  -f, --full-path       draw the whole file path
+</span></span><span style="display:flex;"><span>  -xdg, --use-xdg-path  include xdg-user-dir templates path
+</span></span><span style="display:flex;"><span>  -c PATH, --config PATH
+</span></span><span style="display:flex;"><span>                        configuration file path
+</span></span><span style="display:flex;"><span>  -s SORT_TYPE, --sort SORT_TYPE
+</span></span><span style="display:flex;"><span>                        sort files by name or extension
+</span></span><span style="display:flex;"><span>  -r, --reverse         reverse the sorting order
+</span></span><span style="display:flex;"><span>  -o PATH, --output PATH
+</span></span><span style="display:flex;"><span>                        output path
+</span></span></code></pre></div><h2 id="2-configuration">2. Configuration</h2>
+<p>Pretty much all the options we have mentioned above can be set inside the YAML configuration file, avoiding the need to pass them when running the tool. However, we have a couple of config-exclusive options like paths.</p>
+<p>By default, NeFT looks at the <code>$HOME/Templates</code> directory for templates. Recognizing that many users prefer a clutter-free <code>$HOME</code>, where unnecessary files and folders are kept to a minimum, the tool allows for defining custom paths in the configuration file. This flexibility enables a tidy and organized setup tailored to individual preferences.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># example config file</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># none of these are required</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># but &#34;paths&#34; are recommended</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">paths</span>: <span style="color:#75715e"># defining paths (not required if using use_xdg_path)</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;~/Templates/&#34;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;~/.local/share/templates/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">icons</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># draw icons</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">full_path</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># print the whole path</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">loop</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># loop mode</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">use_xdg_path</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># include xdg-user-dir templates path</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sort</span>: <span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#75715e"># sort files by &#34;name&#34; or &#34;extension&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">reverse</span>: <span style="color:#66d9ef">true</span> <span style="color:#75715e"># reverse the sorting order</span>
+</span></span></code></pre></div><h2 id="3-explaining-loop-mode-and-the-xdg-option">3. Explaining &ldquo;loop mode&rdquo; and the xdg option</h2>
+<p>&ldquo;Loop mode&rdquo; in NeFT simplifies the process of creating multiple files by continuously prompting for the generation of files from templates. When we pass this option, NeFT will repeatedly ask for the creation of additional files, allowing for a straightforward and efficient workflow. To exit the loop, press ESC. This option is useful when you need to create multiple files in succession.</p>
+<p>The <code>xdg</code> options feature incorporates the path of <code>xdg-user-dir TEMPLATES</code>. Prior to making NeFT publicly available, it was hardcoded to look at <code>~/Templates</code>. However, I realized that it would be more intuitive to align with the actual xdg templates path (as this is the default path by the above mentioned command). In the process of refining this tool, I considered incorporating new file options that are typically available when right-clicking within a file manager (New Folder or Empty File). Though, I also considered that users might prefer not to include these files in the menu, so I decided to allow users to define their own paths, defining the in the <a href="#configuration">config file</a>.</p>
+
+</main>
+
+  <footer>
+  
+  <hr/>
+  © asd 2023
+  
+  <br>
+  Website made with [ <a href="https://gohugo.io/" target=_blank>Hugo</a> ]
+  </footer>
+  </body>
+</html>
+

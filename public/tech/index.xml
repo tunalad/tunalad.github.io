@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on My New EPIC Hugo Site</title>
+    <link>https://tunalad.github.io/tech/</link>
+    <description>Recent content in Tech on My New EPIC Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Nov 2023 23:23:56 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://tunalad.github.io/tech/python/</link>
+      <pubDate>Fri, 10 Nov 2023 23:23:56 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>typescript</title>
+      <link>https://tunalad.github.io/tech/typescript/</link>
+      <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>vue</title>
+      <link>https://tunalad.github.io/tech/vue/</link>
+      <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/vue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>javascript</title>
+      <link>https://tunalad.github.io/tech/javascript/</link>
+      <pubDate>Fri, 10 Nov 2023 23:19:51 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>android</title>
+      <link>https://tunalad.github.io/tech/android/</link>
+      <pubDate>Fri, 10 Nov 2023 22:31:15 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>java</title>
+      <link>https://tunalad.github.io/tech/java/</link>
+      <pubDate>Fri, 10 Nov 2023 22:31:15 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>lite-xl</title>
+      <link>https://tunalad.github.io/tech/lite-xl/</link>
+      <pubDate>Fri, 10 Nov 2023 22:24:24 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/lite-xl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>lua</title>
+      <link>https://tunalad.github.io/tech/lua/</link>
+      <pubDate>Fri, 10 Nov 2023 22:24:24 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/lua/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>node</title>
+      <link>https://tunalad.github.io/tech/node/</link>
+      <pubDate>Fri, 10 Nov 2023 21:23:32 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/node/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sqlite</title>
+      <link>https://tunalad.github.io/tech/sqlite/</link>
+      <pubDate>Fri, 10 Nov 2023 21:23:32 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/sqlite/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>qt</title>
+      <link>https://tunalad.github.io/tech/qt/</link>
+      <pubDate>Thu, 09 Nov 2023 22:33:05 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/qt/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -5,17 +5,19 @@ date = 2023-11-03T00:43:39+01:00
 
 ## About this website
 
-Purpose of this website is to be like slightly expanded resume, showcasing my projects & approach on how I go about making stuff.
+Purpose of this website is to be like a slightly expanded resume, showcasing my projects & approach on how I go about making stuff.
 
 Another plan for this site is to have like a "blog" section. It won't necessarily be like actual blogging, but some minor Linux setting up or something like cheatsheets for some tools that I use.
 
-Oh yeah, I'm also an artist! This page will focus only on the tech stuff, for the artistry stuff you can go [here instead]().
+Oh yeah, I'm also an artist! This page will focus only on the tech related stuff, so for the artistry stuff you can go [here instead](https://tunalad.indie.af/) (page might be still under construction, so maybe check out my [tumblr](https://tunalad.tumblr.com/) instead).
 
 ---
 
 ## Web development
 
 My interest in web development sparked during my university years. Initially, I was skeptical due to the prevalence of slow and bloated websites. It was in my 5th semester, while taking a web programming course, that I began to have a change of heart. I found myself genuinely enjoying the process of creating web applications. It struck me that not only were they fun to develop, but they also represented the cleanest and most versatile path to building cross-platform applications.
+
+Ever since then I started to become a lot more open about tech nologies. Instead of seeing something and saying "it sounds bad, that's not for me", I instead say "I mean it doesn't sound that nice, but let's try it out anyway!". One of the technologies that I got into that way is Blender. Although I don't make stuff in it that often, I do find creating with it very enjoyable (except when I have to render the image on my old laptop and proceeds to take about an hour)
 
 ---
 

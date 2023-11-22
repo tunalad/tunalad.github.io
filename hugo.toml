@@ -1,7 +1,9 @@
-baseURL = 'https://example.org/'
+#baseURL = 'https://tunalad.indie.af/'
+baseURL = 'https://tunalad.github.io/'
 languageCode = 'en-us'
 title = 'My New EPIC Hugo Site'
 
+uglyURLs = false
 
 [params]
     lightswitch = false

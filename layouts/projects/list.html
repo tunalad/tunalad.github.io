@@ -15,7 +15,11 @@
             data-tags="{{ .Params.tags | jsonify }}"
         >
             {{ if .Params.notable }}
-            <div class="notable"><small>notable</small></div>
+            <div class="notable">
+                <small title="Projects that I think show my skills"
+                    >notable</small
+                >
+            </div>
             {{end}}
             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a
             ><span class="project-type">[{{ delimit .Params.tags ", " }}]</span>

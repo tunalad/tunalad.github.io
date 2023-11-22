@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>node on My New EPIC Hugo Site</title>
+    <link>https://tunalad.github.io/tech/node/</link>
+    <description>Recent content in node on My New EPIC Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Nov 2023 21:23:32 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tech/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue-kanban</title>
+      <link>https://tunalad.github.io/projects/vue-kanban/</link>
+      <pubDate>Fri, 10 Nov 2023 21:23:32 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/vue-kanban/</guid>
+      <description>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.
+Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</description>
+    </item>
+  </channel>
+</rss>

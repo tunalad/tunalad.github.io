@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>typescript on My New EPIC Hugo Site</title>
+    <link>https://tunalad.github.io/tech/typescript/</link>
+    <description>Recent content in typescript on My New EPIC Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Nov 2023 23:21:51 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tech/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue-todo</title>
+      <link>https://tunalad.github.io/projects/vue-todo/</link>
+      <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/vue-todo/</guid>
+      <description>Todo app, the app most people make when trying out new tools. It was made for me to figure out what are the ways about saving data locally.
+There&amp;rsquo;s nothing much going on with this app, just add, check, or delete tasks in the list. It does what it has to do.</description>
+    </item>
+  </channel>
+</rss>

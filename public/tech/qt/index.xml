@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qt on My New EPIC Hugo Site</title>
+    <link>https://tunalad.github.io/tech/qt/</link>
+    <description>Recent content in qt on My New EPIC Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Nov 2023 22:33:05 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tech/qt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF-splitter</title>
+      <link>https://tunalad.github.io/projects/pdf-splitter/</link>
+      <pubDate>Thu, 09 Nov 2023 22:33:05 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/pdf-splitter/</guid>
+      <description>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems
+Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.
+1. Usage The process is straightforward: locate a document and load it. Upon loading, each page of the document is converted into an image (as depicted above).</description>
+    </item>
+  </channel>
+</rss>
