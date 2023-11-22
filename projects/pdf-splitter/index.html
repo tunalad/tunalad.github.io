@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>PDF-splitter | My New EPIC Hugo Site</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/skills.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/menu.css" />
+    </head>
+
+    <body>
+        
+        
+        <nav>
+            <ul class="menu">
+                [ 
+                <li>
+                    <a
+                        class=""
+                        href="/"
+                        >Home</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/about"
+                        >About</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/projects"
+                        >Projects</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a href="mailto:arsic.novica00@gmail.com">Contact</a>
+                </li>
+                ] 
+            </ul>
+            <hr />
+        </nav>
+    </body>
+</html>
+
+
+<main>
+    <h1 class="post-header">
+        PDF-splitter<sup>[gui]</sup>
+    </h1>
+    <div style="text-align: center">
+        
+
+        <div>
+            [ <a href="https://github.com/tunalad/" target="_blank">GitHub</a> ]
+        </div>
+
+        <ul class="tech-list">
+            
+            <li class="tech-item">python 
+            <li class="tech-item">qt </li>
+        </ul>
+    </div>
+    <p>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems</p>
+<p>Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.</p>
+<p><img src="/images/pdf-splitter/img1.png" alt="dashboard with a document" title="dashboard with a document" />
+</p>
+<h2 id="1-usage">1. Usage</h2>
+<p>The process is straightforward: locate a document and load it.
+Upon loading, each page of the document is converted into an image (as depicted above).</p>
+<p>Now you have two options for exporting the pages: either by selection or range.</p>
+<h3 id="11-by-selection">1.1 By selection</h3>
+<p>Splitting by selection allows you to extract pages by manually clicking on the desired pages within the document. After selecting you pages, you&rsquo;ll have to check &ldquo;Split by selection&rdquo; option on the side. Hitting the &ldquo;Extract pages&rdquo; options, you&rsquo;ll get a single document of chosen pages. If you prefer each page exported individually, make sure to leave the &ldquo;Merge all into one file&rdquo; option unchecked. This way, each selected page will be saved as a separate document, providing a tailored and efficient extraction process.</p>
+<h3 id="12-by-range">1.2 By range</h3>
+<p>When you check the &ldquo;Split by range&rdquo; option, you gain the ability to specify a range of pages for exporting the document. For example, if your document consists of 15 pages, input 5 into the &ldquo;Range from&rdquo; field and 9 into the &ldquo;Range to&rdquo; field. When you export the document, it will generate a new document comprising pages 5 to 9 from the original document.</p>
+
+</main>
+
+  <footer>
+  
+  <hr/>
+  © asd 2023
+  
+  <br>
+  Website made with [ <a href="https://gohugo.io/" target=_blank>Hugo</a> ]
+  </footer>
+  </body>
+</html>
+

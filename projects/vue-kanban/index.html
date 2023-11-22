@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>vue-kanban | My New EPIC Hugo Site</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/skills.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/menu.css" />
+    </head>
+
+    <body>
+        
+        
+        <nav>
+            <ul class="menu">
+                [ 
+                <li>
+                    <a
+                        class=""
+                        href="/"
+                        >Home</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/about"
+                        >About</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a
+                        class=""
+                        href="/projects"
+                        >Projects</a
+                    >
+                </li>
+                <li>|</li>
+                
+                <li>
+                    <a href="mailto:arsic.novica00@gmail.com">Contact</a>
+                </li>
+                ] 
+            </ul>
+            <hr />
+        </nav>
+    </body>
+</html>
+
+
+<main>
+    <h1 class="post-header">
+        vue-kanban<sup>[web]</sup>
+    </h1>
+    <div style="text-align: center">
+        
+
+        <div>
+            [ <a href="https://github.com/tunalad/vue-kanban" target="_blank">GitHub</a>  |
+            <a href="https://tunalad.github.io/vue-kanban/" target="_blank">Live</a>
+            ]
+        </div>
+
+        <ul class="tech-list">
+            
+            <li class="tech-item">vue 
+            <li class="tech-item">node 
+            <li class="tech-item">javascript 
+            <li class="tech-item">sqlite </li>
+        </ul>
+    </div>
+    <p>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.</p>
+<p>Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</p>
+<p>Although it&rsquo;s not completely finishes or styled properly, I am planning to make a separate repository in the future. There I&rsquo;ll try to polish everything up, and add some more sensible features. Plan is to also have an option to let users define server URLs, instead of being stuck at localhost only (as it is now).</p>
+<p>Unlike for when I was graduating, I will try to be brief and won&rsquo;t show everything this app has to offer. I will first go about showing around the board part itself, then the dashboard.</p>
+<h2 id="1-usage">1. Usage</h2>
+<h3 id="11-boards">1.1 Boards</h3>
+<p>As any kanban board does, we can create lists and cards for it.</p>
+<p><img src="/images/vue-kanban/board-filled.png" alt="board with lists and cards" title="board with lists and cards" />
+</p>
+<p>Clicking on cards we have a bunch of options for it, like renaming them, writing a description for them, applying labels, etc.</p>
+<p><img src="/images/vue-kanban/cropped/card.png" alt="card example" title="card example" />
+</p>
+<p>As for the labels, it&rsquo;s the colored bar cards have. It helps with differentiating them, like what they are exactly related to</p>
+<p><img src="/images/vue-kanban/cropped/labelman.png" alt="labels list" title="labels list" />
+</p>
+<p>Editing and creating labels is also pretty simple as passing a title and picking a color for them</p>
+<p><img src="/images/vue-kanban/cropped/labelman-edit.png" alt="labels editing" title="labels editing" />
+</p>
+<h3 id="12-dashboard">1.2 Dashboard</h3>
+<p>Dashboard is pretty much just a list of previously accessed boards, and buttons for creating new boards and finding boards</p>
+<p><img src="/images/vue-kanban/cropped/dashboard.png" alt="dashboard" title="dashboard" />
+</p>
+<p>Creating a new board will require you to come up with a name and a password for it.</p>
+<p><img src="/images/vue-kanban/cropped/new-board.png" alt="creating a board" title="creating a board" />
+</p>
+<p>&ldquo;Find board&rdquo; button will give you a list of all avaliable boards found on the server. Result can be sorted by it&rsquo;s id or title. Result can be also filtered with the search bar above</p>
+<p><img src="/images/vue-kanban/cropped/find-board.png" alt="finding a board" title="finding a board" />
+</p>
+<p>Either way, when we try to access a board we haven&rsquo;t accessed yet, we will be asked for a password</p>
+<p><img src="/images/vue-kanban/cropped/password.png" alt="board password" title="board password" />
+</p>
+
+</main>
+
+  <footer>
+  
+  <hr/>
+  © asd 2023
+  
+  <br>
+  Website made with [ <a href="https://gohugo.io/" target=_blank>Hugo</a> ]
+  </footer>
+  </body>
+</html>
+

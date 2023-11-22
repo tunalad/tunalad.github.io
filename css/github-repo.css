@@ -1,0 +1,45 @@
+/* github-repo */
+
+.github-repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.github-repo {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-left: 7px solid cyan;
+    padding: 5px 10px;
+    margin: 10px 0;
+    max-width: 350px;
+    min-width: 350px;
+    min-height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.github-repo a {
+    display: block;
+    text-decoration: none;
+}
+
+.github-repo a:hover {
+    text-decoration: underline;
+}
+
+.github-repo h2 {
+    padding: 0 2px;
+    margin: 0;
+}
+.github-repo p {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0;
+    padding-left: 5px;
+    flex-grow: 1;
+}
+
+.github-repo small {
+    margin-top: auto;
+    padding: 0 5px;
+}
