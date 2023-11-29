@@ -7,9 +7,9 @@ date = 2023-11-03T00:43:39+01:00
 
 Purpose of this website is to be like a slightly expanded resume, showcasing my projects & approach on how I go about making stuff.
 
-Another plan for this site is to have like a "blog" section. It won't necessarily be like actual blogging, but some minor Linux setting up or something like cheatsheets for some tools that I use.
+Another plan for this site is to have like a "blog" section. It won't necessarily be like actual blogging, but some minor Linux setting up stuff, or something like cheatsheets for some tools that I use.
 
-Oh yeah, I'm also an artist! This page will focus only on the tech related stuff, so for the artistry stuff you can go [here instead](https://tunalad.indie.af/) (page might be still under construction, so maybe check out my [tumblr](https://tunalad.tumblr.com/) instead).
+As for the technical stuff, this website was made with [Hugo](https://gohugo.io/), with microscopic amount of JavaScript.
 
 ---
 

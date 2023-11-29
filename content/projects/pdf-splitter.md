@@ -6,7 +6,7 @@ tags = ["gui"]
 tech = ["python", "qt"]
 weight = 30
 notable = true
-github = "https://github.com/tunalad/"
+github = "https://github.com/tunalad/pdf-splitter"
 +++
 
 PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems

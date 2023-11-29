@@ -43,8 +43,8 @@
     --project-rgba: rgba(0, 0, 0, 0.1);
     --tech-color: var(--nord-blue1);
     --project-border: var(--nord-green);
-    --inline-code: var(--background-color);
-    --inline-code-bg: var(--project-border);
+    --inline-code: var(--nord-yellow);
+    --inline-code-bg: var(--nord-dark1);
 }
 
 * {
@@ -205,9 +205,9 @@ p {
     font-size: 15px;
 }
 
-p > code {
-    font-style: italic;
-    padding: 0 2px;
+:not(pre) > code {
+    border-radius: 5px;
+    padding: 2px 4px;
     color: var(--inline-code);
     background-color: var(--inline-code-bg);
 }
@@ -224,6 +224,12 @@ h2 {
     color: var(--accent-color);
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+small {
+    text-align: center;
 }
 
 sup {

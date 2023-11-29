@@ -3,24 +3,19 @@ title = 'Home'
 date = 2023-11-03T00:34:14+01:00
 +++
 
-# Hello, I'm Novica
+# Novica's website
 
 {{< small "Full Stack Developer" >}}
 
-Purpose of this website is to be like slightly expanded resume, showcasing my projects and mentioning a little bit about myself.
+Welcome to my website. I'm just a dude that likes to make stuff that does some stuff. You can check out stuff that I made on the [projects page](). And if you're interested in my "hostory" of development, check out the [about page]().
 
-Another plan for this site is to have like a "blogging" section. It won't necessarily be like actual blogging, but some minor Linux setting up or something like cheatsheets for some programming tools.
-
----
-
-## About
-
-asd
+Oh yeah, I'm also an artist! This page will focus only on the tech related stuff, so for the artistry stuff you can go [here instead](https://tunalad.indie.af/) (page might be still under construction, so maybe check out my [tumblr](https://tunalad.tumblr.com/) instead).
 
 ---
 
-## Notable Projects
+## External links
 
-asd
-
-For more projects check the [Projects page](/projects).
+{{< external >}}
+[github](https://github.com/tunalad)
+[email](mailto:arsic.novica00@gmail.com)
+{{< /external >}}

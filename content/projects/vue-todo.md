@@ -6,7 +6,7 @@ draft = false
 tags = ["web"] # cli, gui, tui, web
 tech = ["vue", "typescript"] # tech used for the project
 weight = 60
-github = "https://github.com/tunalad/"
+github = "https://github.com/tunalad/vue-todo"
 live = "https://tunalad.github.io/vue-todo/"
 +++
 

@@ -7,7 +7,8 @@ tags = ["cli"] # cli, gui, tui, web
 tech = [""] # tech used for the project
 weight = 100
 notable = false
-github = "https://github.com/tunalad/"
+github = "https://github.com/tunalad/arch-repo"
+live = "https://tunalad.github.io/arch-repo/"
 +++
 
 Not necessarily a project, but something that I want to share here.

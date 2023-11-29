@@ -20,6 +20,8 @@ Unlike for when I was graduating, I will try to be brief and won't show everythi
 
 ## 1. Usage
 
+At the moment you are **required** to download the server app, since the app is looking only at the `localhost:1337` server. Server app is also made with `node + express + sqlite` so you can also build it from the source code pretty quickly.
+
 ### 1.1 Boards
 
 As any kanban board does, we can create lists and cards for it.
@@ -55,3 +57,43 @@ Creating a new board will require you to come up with a name and a password for 
 Either way, when we try to access a board we haven't accessed yet, we will be asked for a password
 
 ![board password](/images/vue-kanban/cropped/password.png)
+
+## 2. Backend explanation
+
+For this section I will just mention in short lines what the server app does. If interested in code, check out the github liked above.
+
+### 2.1 Database
+
+Idea for the database is pretty simple, `board` has `list` and `list` has `card`. There's also stuff like `label` and `card_label`, but those features aren't required for the kanbal app.
+
+![database diagram](/images/vue-kanban/db-dark.png)
+
+All database management stuff is done via module I wrote. It's pretty much like a wrapper for sqlite library, written to have a syntax similar to MongoDB's (so creating classes and calling functions from those classes).
+
+### 2.2 Node + Express app
+
+These technologies aren't necessarily used because I like them, but used primarily because it's javascript. Javascript isn't something that I often use outside of writing Font-end web apps, so I felt like this would be a good way to push me and use it a little more.
+
+This app is structured into multiple files. So instead of writing everything into a single file, I've just made a server initialization file, connected initialized the database, and split routes into their own files. By doing that, I can just write code for one route, then copy it and change some minor stuff related to that table.
+
+### 2.3 Routes
+
+As mentioned above, routes are split into multiple files.
+
+These routes can be split into 3 sections:
+
+-   Simple
+
+    -   these routes just do whatever they have to the database and call it a day.
+    -   Example: getting data about a board. We just get the data from the database and return it to the user
+    -   Routes: `GET /board/:id`, `DELETE /board/:id`, `DELETE /label/:id`
+
+-   Complex
+    -   they're just like simple ones, but they do something extra to the data.
+    -   Example: unlocking a board. We pass to the route what table we want to open and what password it has, route checks if everything is correct and returns data accordingly
+    -   Routes: `POST /board/:id/unlock`, `POST` routes for `board`, `list`, `card` and `label`, `DELETE` and `PATCH` routes for `list` and `card` tables
+-   Routes that return everything about the table
+    -   these routes utilise a function that get everything related to the board, packages them in a specific way, and gives it to the route to do whatever it has to.
+    -   Routes: `GET /board/:id/full`, `GET /board/:id/live`
+    -   Example: watching if the table's data changed. SSE route watches for the data, and updates all users that are connected to the table.
+    -   Routes: `GET /board/:id/full`, `GET /board/:id/live`

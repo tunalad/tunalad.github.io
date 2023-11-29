@@ -1,7 +1,7 @@
 #baseURL = 'https://tunalad.indie.af/'
 baseURL = 'https://tunalad.github.io/'
 languageCode = 'en-us'
-title = 'My New EPIC Hugo Site'
+title = "Novica's Website"
 
 uglyURLs = false
 

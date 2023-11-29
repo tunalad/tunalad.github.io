@@ -6,7 +6,7 @@ tags = ["tui", "cli"]
 tech = ["python"]
 weight = 20
 notable = true
-github = "https://github.com/tunalad/"
+github = "https://github.com/tunalad/neft-py"
 +++
 
 NeFT (**Ne**w **F**rom **T**emplate) is a simple command-line tool that allows you to create new files using pre-made templates.
@@ -62,4 +62,4 @@ reverse: true # reverse the sorting order
 
 "Loop mode" in NeFT simplifies the process of creating multiple files by continuously prompting for the generation of files from templates. When we pass this option, NeFT will repeatedly ask for the creation of additional files, allowing for a straightforward and efficient workflow. To exit the loop, press ESC. This option is useful when you need to create multiple files in succession.
 
-The `xdg` options feature incorporates the path of `xdg-user-dir TEMPLATES`. Prior to making NeFT publicly available, it was hardcoded to look at `~/Templates`. However, I realized that it would be more intuitive to align with the actual xdg templates path (as this is the default path by the above mentioned command). In the process of refining this tool, I considered incorporating new file options that are typically available when right-clicking within a file manager (New Folder or Empty File). Though, I also considered that users might prefer not to include these files in the menu, so I decided to allow users to define their own paths, defining the in the [config file](#configuration).
+The `xdg` options feature incorporates the path of `xdg-user-dir TEMPLATES`. Prior to making NeFT publicly available, it was hardcoded to look at `~/Templates`. However, I realized that it would be more intuitive to align with the actual xdg templates path (as this is the default path by the above mentioned command). In the process of refining this tool, I considered incorporating new file options that are typically available when right-clicking within a file manager (New Folder or Empty File). Though, I also considered that users might prefer not to include these files in the menu, so I decided to allow users to define their own paths, defining the path in the [config file](#configuration).

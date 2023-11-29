@@ -6,7 +6,7 @@ draft = false
 tags = ["cli"] # cli, gui, tui, web
 tech = ["python"] # tech used for the project
 weight = 70
-github = "https://github.com/tunalad/"
+github = "https://github.com/tunalad/helloworld-rs-tags-scrapper"
 +++
 
 A tool that, based on your input, will give you what tags are being used on the helloworld.rs.
