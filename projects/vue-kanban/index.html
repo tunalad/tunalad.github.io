@@ -80,6 +80,7 @@
 <p>Although it&rsquo;s not completely finishes or styled properly, I am planning to make a separate repository in the future. There I&rsquo;ll try to polish everything up, and add some more sensible features. Plan is to also have an option to let users define server URLs, instead of being stuck at localhost only (as it is now).</p>
 <p>Unlike for when I was graduating, I will try to be brief and won&rsquo;t show everything this app has to offer. I will first go about showing around the board part itself, then the dashboard.</p>
 <h2 id="1-usage">1. Usage</h2>
+<p>At the moment you are <strong>required</strong> to download the server app, since the app is looking only at the <code>localhost:1337</code> server. Server app is also made with <code>node + express + sqlite</code> so you can also build it from the source code pretty quickly.</p>
 <h3 id="11-boards">1.1 Boards</h3>
 <p>As any kanban board does, we can create lists and cards for it.</p>
 <p><img src="/images/vue-kanban/board-filled.png" alt="board with lists and cards" title="board with lists and cards" />
@@ -106,6 +107,46 @@
 <p>Either way, when we try to access a board we haven&rsquo;t accessed yet, we will be asked for a password</p>
 <p><img src="/images/vue-kanban/cropped/password.png" alt="board password" title="board password" />
 </p>
+<h2 id="2-backend-explanation">2. Backend explanation</h2>
+<p>For this section I will just mention in short lines what the server app does. If interested in code, check out the github liked above.</p>
+<h3 id="21-database">2.1 Database</h3>
+<p>Idea for the database is pretty simple, <code>board</code> has <code>list</code> and <code>list</code> has <code>card</code>. There&rsquo;s also stuff like <code>label</code> and <code>card_label</code>, but those features aren&rsquo;t required for the kanbal app.</p>
+<p><img src="/images/vue-kanban/db-dark.png" alt="database diagram" title="database diagram" />
+</p>
+<p>All database management stuff is done via module I wrote. It&rsquo;s pretty much like a wrapper for sqlite library, written to have a syntax similar to MongoDB&rsquo;s (so creating classes and calling functions from those classes).</p>
+<h3 id="22-node--express-app">2.2 Node + Express app</h3>
+<p>These technologies aren&rsquo;t necessarily used because I like them, but used primarily because it&rsquo;s javascript. Javascript isn&rsquo;t something that I often use outside of writing Font-end web apps, so I felt like this would be a good way to push me and use it a little more.</p>
+<p>This app is structured into multiple files. So instead of writing everything into a single file, I&rsquo;ve just made a server initialization file, connected initialized the database, and split routes into their own files. By doing that, I can just write code for one route, then copy it and change some minor stuff related to that table.</p>
+<h3 id="23-routes">2.3 Routes</h3>
+<p>As mentioned above, routes are split into multiple files.</p>
+<p>These routes can be split into 3 sections:</p>
+<ul>
+<li>
+<p>Simple</p>
+<ul>
+<li>these routes just do whatever they have to the database and call it a day.</li>
+<li>Example: getting data about a board. We just get the data from the database and return it to the user</li>
+<li>Routes: <code>GET /board/:id</code>, <code>DELETE /board/:id</code>, <code>DELETE /label/:id</code></li>
+</ul>
+</li>
+<li>
+<p>Complex</p>
+<ul>
+<li>they&rsquo;re just like simple ones, but they do something extra to the data.</li>
+<li>Example: unlocking a board. We pass to the route what table we want to open and what password it has, route checks if everything is correct and returns data accordingly</li>
+<li>Routes: <code>POST /board/:id/unlock</code>, <code>POST</code> routes for <code>board</code>, <code>list</code>, <code>card</code> and <code>label</code>, <code>DELETE</code> and <code>PATCH</code> routes for <code>list</code> and <code>card</code> tables</li>
+</ul>
+</li>
+<li>
+<p>Routes that return everything about the table</p>
+<ul>
+<li>these routes utilise a function that get everything related to the board, packages them in a specific way, and gives it to the route to do whatever it has to.</li>
+<li>Routes: <code>GET /board/:id/full</code>, <code>GET /board/:id/live</code></li>
+<li>Example: watching if the table&rsquo;s data changed. SSE route watches for the data, and updates all users that are connected to the table.</li>
+<li>Routes: <code>GET /board/:id/full</code>, <code>GET /board/:id/live</code></li>
+</ul>
+</li>
+</ul>
 
 </main>
 
@@ -114,8 +155,6 @@
   <hr/>
   © asd 2023
   
-  <br>
-  Website made with [ <a href="https://gohugo.io/" target=_blank>Hugo</a> ]
   </footer>
   </body>
 </html>
