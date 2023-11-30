@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on My New EPIC Hugo Site</title>
+    <title>Projects on Novica&#39;s Website</title>
     <link>https://tunalad.github.io/projects/</link>
-    <description>Recent content in Projects on My New EPIC Hugo Site</description>
+    <description>Recent content in Projects on Novica&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Nov 2023 23:26:21 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2023 18:52:53 +0100</lastBuildDate>
     <atom:link href="https://tunalad.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vue-kanban</title>
@@ -68,6 +68,16 @@ There&amp;rsquo;s nothing much going on with this app, just add, check, or delet
 For example, inputing python and selecting your seniority (or none), it will look through all the ads and fetch the tags from them.
 After that, it will create a graph with the count of found items.
 Alsongside with pdf-splitter, this project was also made for the SCS (Specialized Computer Systems) course</description>
+    </item>
+    <item>
+      <title>nsp</title>
+      <link>https://tunalad.github.io/projects/nsp/</link>
+      <pubDate>Thu, 30 Nov 2023 18:52:53 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/nsp/</guid>
+      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.
+Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.
+Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.
+usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
     </item>
     <item>
       <title>arch-repo</title>

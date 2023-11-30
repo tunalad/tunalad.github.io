@@ -136,9 +136,18 @@ ul.tags {
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
 
     & li {
         display: inline;
+    }
+
+    & .post-count {
+        opacity: 0.25;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 1rem;
     }
 }
 

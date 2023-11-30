@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Projects | My New EPIC Hugo Site</title>
+        <title>Projects | Novica&#39;s Website</title>
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/skills.css" />
         <link rel="stylesheet" href="/css/fonts.css" />
@@ -12,41 +12,45 @@
 
     <body>
         
-        
         <nav>
-            <ul class="menu">
+            <ul class="menu" style="margin: 0">
                 [ 
                 <li>
                     <a
                         class=""
                         href="/"
-                        >Home</a
                     >
+                        Home
+                    </a>
                 </li>
-                <li>|</li>
-                
+                  | 
                 <li>
                     <a
                         class=""
                         href="/about"
-                        >About</a
                     >
+                        About
+                    </a>
                 </li>
-                <li>|</li>
-                
+                  | 
                 <li>
                     <a
                         class="is-active"
                         href="/projects"
-                        >Projects</a
                     >
+                        Projects
+                    </a>
                 </li>
-                <li>|</li>
-                
+                  | 
                 <li>
-                    <a href="mailto:arsic.novica00@gmail.com">Contact</a>
+                    <a
+                        class=""
+                        href="mailto:arsic.novica00@gmail.com"
+                    >
+                        Contact
+                    </a>
                 </li>
-                ] 
+                 ]
             </ul>
             <hr />
         </nav>
@@ -66,6 +70,10 @@
         
         <li><a href="#web">web</a></li>
         
+        <small class="post-count" title="projects count">
+            
+            11
+        </small>
     </ul>
     <ul class="projects">
           
@@ -245,6 +253,27 @@
             data-tags="[&#34;cli&#34;]"
         >
             
+            <a href="/projects/nsp/">nsp</a
+            ><span class="project-type">[cli]</span>
+            <hr />
+            <p>New Serbian Translation Bible on the CLI (&#43; BibleGateway scrapped)</p>
+            <ul class="tech-list">
+                
+                <li class="tech-item">
+                    python
+                    
+                <li class="tech-item">
+                    beautiful-soup
+                    
+                </li>
+            </ul>
+        </li>
+        
+        <li
+            class="project "
+            data-tags="[&#34;cli&#34;]"
+        >
+            
             <a href="/projects/arch-repo/">arch-repo</a
             ><span class="project-type">[cli]</span>
             <hr />
@@ -287,7 +316,7 @@
   <footer>
   
   <hr/>
-  © asd 2023
+  © Novica 2023
   
   </footer>
   </body>
@@ -298,8 +327,11 @@
     document.addEventListener("DOMContentLoaded", function () {
         
         setActiveLink(window.location.hash);
+        updatePostCount();
+
         window.addEventListener("hashchange", function () {
             setActiveLink(window.location.hash);
+            updatePostCount();
         });
 
         
@@ -311,7 +343,31 @@
         });
     });
 
+    function updatePostCount() {
+        
+        var visibleProjects = document.querySelectorAll(
+            ".projects li[data-tags][style='display: block;']",
+        );
+        var postCountElement = document.querySelector(".post-count");
+
+        
+        if (postCountElement) {
+            if (window.location.hash && visibleProjects) {
+                
+                postCountElement.textContent = visibleProjects.length;
+            } else {
+                
+                var allProjects = document.querySelectorAll(
+                    ".projects li[data-tags]",
+                );
+                postCountElement.textContent = allProjects.length;
+            }
+        }
+    }
+
     function setActiveLink(hash) {
+        updatePostCount();
+
         
         var allLinks = document.querySelectorAll(".tags a");
         allLinks.forEach(function (link) {

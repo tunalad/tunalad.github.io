@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>beautiful-soup on Novica&#39;s Website</title>
+    <link>https://tunalad.github.io/tech/beautiful-soup/</link>
+    <description>Recent content in beautiful-soup on Novica&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Nov 2023 18:52:53 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tech/beautiful-soup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nsp</title>
+      <link>https://tunalad.github.io/projects/nsp/</link>
+      <pubDate>Thu, 30 Nov 2023 18:52:53 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/nsp/</guid>
+      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.
+Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.
+Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.
+usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
+    </item>
+  </channel>
+</rss>
