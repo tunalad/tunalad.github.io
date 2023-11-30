@@ -7,8 +7,7 @@ uglyURLs = false
 
 [params]
     lightswitch = false
-    footer = "&copy; asd {Year}"
-    contact = "mailto:arsic.novica00@gmail.com"
+    footer = "&copy; Novica {Year}"
 
 [taxonomies]
     tag = "tags"
@@ -36,3 +35,7 @@ weight = 20
 name = "Projects"
 url = "/projects"
 weight = 30
+[[menu.main]]
+name = "Contact"
+url = "mailto:arsic.novica00@gmail.com"
+weight = 9999999

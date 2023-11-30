@@ -13,11 +13,21 @@ As for the technical stuff, this website was made with [Hugo](https://gohugo.io/
 
 ---
 
+## Younger me
+
+As stated on the home page, I'm just a dude that likes to make stuff. I've got my first computer at the age of 6 (or 7, I don't remember exactly), constantly playing games on it pretty much. Of course, that lead me to start making my own games and mods for games. Around 12 or 13 years of age I started learning English properly, which helped a lot with finding proper resources. That's about when I started coding my own stuff.
+
+I sadly haven't archived my older projects, but ones that I remember being good were a Slender game clone and 3D rage platformer game. There were a couple of 2D platformer games too, but I was pretty bad at finishing my projects back then so there were like 2-3 test levels at most. There weren't many non-gaming projects that I was making, but one that I do very well remember was a Dicord bot written in C#.
+
+Now games are't just coding, it's also pretty graphics and good sound design. This later down the line led me to start [doing music and art](https://tunalad.tumblr.com/) (primarily music though).
+
+---
+
 ## Web development
 
-My interest in web development sparked during my university years. Initially, I was skeptical due to the prevalence of slow and bloated websites. It was in my 5th semester, while taking a web programming course, that I began to have a change of heart. I found myself genuinely enjoying the process of creating web applications. It struck me that not only were they fun to develop, but they also represented the cleanest and most versatile path to building cross-platform applications.
+My interest in web development sparked during my university years. Initially, I was skeptical due to the prevalence of slow and bloated websites. It was in my 5th semester, while taking a web programming course, that I began to change my mind. I found myself genuinely enjoying the process of creating web applications. It struck me that not only were they fun to develop, but they also represented the cleanest and most versatile path to building cross-platform applications.
 
-Ever since then I started to become a lot more open about tech nologies. Instead of seeing something and saying "it sounds bad, that's not for me", I instead say "I mean it doesn't sound that nice, but let's try it out anyway!". One of the technologies that I got into that way is Blender. Although I don't make stuff in it that often, I do find creating with it very enjoyable (except when I have to render the image on my old laptop and proceeds to take about an hour)
+Ever since then I started to become a lot more open about tech nologies. Instead of seeing something and saying "it sounds bad, that's not for me", I instead say "I mean it doesn't sound that nice, but let's try it out anyway!". One of the technologies that I got into that way is Blender. Although I don't make stuff in Blender that often anymore, I do find creating with it very enjoyable (except when I have to render a single image on my old laptop and proceeds to take about an hour).
 
 ---
 

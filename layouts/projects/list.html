@@ -6,6 +6,10 @@
         {{ range site.Taxonomies.tags }}
         <li><a href="#{{.Page.Title}}">{{ .Page.Title }}</a></li>
         {{ end }}
+        <small class="post-count" title="projects count">
+            {{ $nonDraftPosts := where .Site.RegularPages "Draft" "==" false }}
+            {{ printf "%d" (len $nonDraftPosts) }}
+        </small>
     </ul>
     <ul class="projects">
         {{ $pages := .Pages }} {{ if .IsHome }} {{ $pages = .Site.RegularPages
@@ -42,8 +46,11 @@
     document.addEventListener("DOMContentLoaded", function () {
         // Call the function on page load and when the hash changes
         setActiveLink(window.location.hash);
+        updatePostCount();
+
         window.addEventListener("hashchange", function () {
             setActiveLink(window.location.hash);
+            updatePostCount();
         });
 
         // Add is-active class to the "all" link on page load
@@ -55,7 +62,31 @@
         });
     });
 
+    function updatePostCount() {
+        // Count the number of visible projects
+        var visibleProjects = document.querySelectorAll(
+            ".projects li[data-tags][style='display: block;']",
+        );
+        var postCountElement = document.querySelector(".post-count");
+
+        // Update the post count element
+        if (postCountElement) {
+            if (window.location.hash && visibleProjects) {
+                // If there's a hash, update with the visible projects count
+                postCountElement.textContent = visibleProjects.length;
+            } else {
+                // If no hash, update with the total number of projects
+                var allProjects = document.querySelectorAll(
+                    ".projects li[data-tags]",
+                );
+                postCountElement.textContent = allProjects.length;
+            }
+        }
+    }
+
     function setActiveLink(hash) {
+        updatePostCount();
+
         // Remove is-active class from all links in the .tags class
         var allLinks = document.querySelectorAll(".tags a");
         allLinks.forEach(function (link) {

@@ -1,6 +1,6 @@
 <ul class="menu" style="margin: 0">
-    [{{- $links := split (trim .Inner "\n") "\n" -}} {{ range $index, $link :=
+    [ {{- $links := split (trim .Inner "\n") "\n" -}} {{ range $index, $link :=
     $links }} {{ if ne $index 0 }} | {{ end }}
     <li>{{ $link | markdownify }}</li>
-    {{ end }}]
+    {{ end }} ]
 </ul>

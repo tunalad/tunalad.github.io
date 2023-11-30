@@ -11,25 +11,20 @@
     </head>
 
     <body>
-        <!--<h1 class="site-title">{{.Site.Title}}</h1>-->
         {{ $currentPage := .Name }}
         <nav>
-            <ul class="menu">
-                [ {{ range .Site.Menus.main }}
+            <ul class="menu" style="margin: 0">
+                [ {{- $links := .Site.Menus.main -}} {{ range $index, $link :=
+                $links }} {{ if ne $index 0 }} | {{ end }}
                 <li>
                     <a
-                        class="{{ if eq $currentPage .Name }}is-active{{end}}"
-                        href="{{ .URL }}"
-                        >{{ .Name }}</a
+                        class="{{ if eq $currentPage $link.Name }}is-active{{end}}"
+                        href="{{ $link.URL }}"
                     >
+                        {{ $link.Name }}
+                    </a>
                 </li>
-                <li>|</li>
-                {{ end }}
-                <li>
-                    <a href="{{ .Site.Params.contact }}">Contact</a>
-                </li>
-                ] {{ if .Site.Params.lightswitch }} {{ partial
-                "lightswitch.html" }} {{ end }}
+                {{ end }} ]
             </ul>
             <hr />
         </nav>
