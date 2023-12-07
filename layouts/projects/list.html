@@ -3,7 +3,7 @@
 <main>
     <ul class="tags">
         <li><a href="javascript:void(0)" onclick="removeHash()">all</a></li>
-        {{ range site.Taxonomies.tags }}
+        {{ range site.Taxonomies.tags }} |
         <li><a href="#{{.Page.Title}}">{{ .Page.Title }}</a></li>
         {{ end }}
         <small class="post-count" title="projects count">
