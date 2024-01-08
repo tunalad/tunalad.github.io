@@ -13,40 +13,28 @@
       <link>https://tunalad.github.io/projects/neft/</link>
       <pubDate>Thu, 09 Nov 2023 22:02:51 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/neft/</guid>
-      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.
-I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.
-1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
+      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.&#xA;I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.&#xA;1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
     </item>
     <item>
       <title>helloworld-rs-tag-scrapper</title>
       <link>https://tunalad.github.io/projects/helloworld-rs-tag-scrapper/</link>
       <pubDate>Fri, 10 Nov 2023 23:23:56 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/helloworld-rs-tag-scrapper/</guid>
-      <description>A tool that, based on your input, will give you what tags are being used on the helloworld.rs.
-For example, inputing python and selecting your seniority (or none), it will look through all the ads and fetch the tags from them.
-After that, it will create a graph with the count of found items.
-Alsongside with pdf-splitter, this project was also made for the SCS (Specialized Computer Systems) course</description>
+      <description>A tool that, based on your input, will give you what tags are being used on the helloworld.rs.&#xA;For example, inputing python and selecting your seniority (or none), it will look through all the ads and fetch the tags from them.&#xA;After that, it will create a graph with the count of found items.&#xA;Alsongside with pdf-splitter, this project was also made for the SCS (Specialized Computer Systems) course</description>
     </item>
     <item>
       <title>nsp</title>
       <link>https://tunalad.github.io/projects/nsp/</link>
       <pubDate>Thu, 30 Nov 2023 18:52:53 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/nsp/</guid>
-      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.
-Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.
-Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.
-usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
+      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.&#xA;Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.&#xA;Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.&#xA;usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
     </item>
     <item>
       <title>arch-repo</title>
       <link>https://tunalad.github.io/projects/arch-repo/</link>
       <pubDate>Mon, 20 Nov 2023 23:26:21 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/arch-repo/</guid>
-      <description>Not necessarily a project, but something that I want to share here.
-I have my own Arch Linux repository, where I put tools that I wrote, tools that I forked and made changes and older versions of some tools.
-List of the packages can be found here.
-To add this repository to your own system, add this to your /etc/pacman.conf
-[tunalad] SigLevel = Optional DatabaseOptional Server = https://tunalad.github.io/arch-repo/$arch </description>
+      <description>Not necessarily a project, but something that I want to share here.&#xA;I have my own Arch Linux repository, where I put tools that I wrote, tools that I forked and made changes and older versions of some tools.&#xA;List of the packages can be found here.&#xA;To add this repository to your own system, add this to your /etc/pacman.conf&#xA;[tunalad] SigLevel = Optional DatabaseOptional Server = https://tunalad.github.io/arch-repo/$arch </description>
     </item>
   </channel>
 </rss>

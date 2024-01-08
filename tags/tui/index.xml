@@ -13,9 +13,7 @@
       <link>https://tunalad.github.io/projects/neft/</link>
       <pubDate>Thu, 09 Nov 2023 22:02:51 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/neft/</guid>
-      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.
-I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.
-1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
+      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.&#xA;I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.&#xA;1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
     </item>
   </channel>
 </rss>

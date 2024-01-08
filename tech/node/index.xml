@@ -13,8 +13,7 @@
       <link>https://tunalad.github.io/projects/vue-kanban/</link>
       <pubDate>Fri, 10 Nov 2023 21:23:32 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/vue-kanban/</guid>
-      <description>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.
-Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</description>
+      <description>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.&#xA;Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</description>
     </item>
   </channel>
 </rss>

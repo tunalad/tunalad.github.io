@@ -13,10 +13,7 @@
       <link>https://tunalad.github.io/projects/nsp/</link>
       <pubDate>Thu, 30 Nov 2023 18:52:53 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/nsp/</guid>
-      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.
-Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.
-Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.
-usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
+      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.&#xA;Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.&#xA;Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.&#xA;usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
     </item>
   </channel>
 </rss>

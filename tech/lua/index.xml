@@ -13,10 +13,7 @@
       <link>https://tunalad.github.io/projects/lixling/</link>
       <pubDate>Fri, 10 Nov 2023 22:24:24 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/lixling/</guid>
-      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.
-The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.
-1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:
-Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
+      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.&#xA;The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.&#xA;1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:&#xA;Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
     </item>
   </channel>
 </rss>

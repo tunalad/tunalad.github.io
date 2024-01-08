@@ -13,36 +13,28 @@
       <link>https://tunalad.github.io/projects/vue-kanban/</link>
       <pubDate>Fri, 10 Nov 2023 21:23:32 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/vue-kanban/</guid>
-      <description>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.
-Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</description>
+      <description>Trello-inspired task management web app. A full stack web app that I built as my graduation project, and a tool that I personally use sometimes.&#xA;Besides creating a kanban board app, I wanted to make an actual FOSS alternative to the paid task management apps. So this app can be used by multiple people for actual projects, and they will all get updated when changes to the board are made.</description>
     </item>
     <item>
       <title>NeFT</title>
       <link>https://tunalad.github.io/projects/neft/</link>
       <pubDate>Thu, 09 Nov 2023 22:02:51 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/neft/</guid>
-      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.
-I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.
-1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
+      <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.&#xA;I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.&#xA;1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
     </item>
     <item>
       <title>PDF-splitter</title>
       <link>https://tunalad.github.io/projects/pdf-splitter/</link>
       <pubDate>Thu, 09 Nov 2023 22:33:05 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/pdf-splitter/</guid>
-      <description>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems
-Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.
-1. Usage The process is straightforward: locate a document and load it. Upon loading, each page of the document is converted into an image (as depicted above).</description>
+      <description>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems&#xA;Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.&#xA;1. Usage The process is straightforward: locate a document and load it. Upon loading, each page of the document is converted into an image (as depicted above).</description>
     </item>
     <item>
       <title>lixling</title>
       <link>https://tunalad.github.io/projects/lixling/</link>
       <pubDate>Fri, 10 Nov 2023 22:24:24 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/lixling/</guid>
-      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.
-The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.
-1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:
-Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
+      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.&#xA;The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.&#xA;1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:&#xA;Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
     </item>
     <item>
       <title>vue-floppy-sim</title>
@@ -56,56 +48,42 @@ Command Description Lixling: Install Installs listed plugins Lixling: Update Upd
       <link>https://tunalad.github.io/projects/vue-todo/</link>
       <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/vue-todo/</guid>
-      <description>Todo app, the app most people make when trying out new tools. It was made for me to figure out what are the ways about saving data locally.
-There&amp;rsquo;s nothing much going on with this app, just add, check, or delete tasks in the list. It does what it has to do.</description>
+      <description>Todo app, the app most people make when trying out new tools. It was made for me to figure out what are the ways about saving data locally.&#xA;There&amp;rsquo;s nothing much going on with this app, just add, check, or delete tasks in the list. It does what it has to do.</description>
     </item>
     <item>
       <title>helloworld-rs-tag-scrapper</title>
       <link>https://tunalad.github.io/projects/helloworld-rs-tag-scrapper/</link>
       <pubDate>Fri, 10 Nov 2023 23:23:56 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/helloworld-rs-tag-scrapper/</guid>
-      <description>A tool that, based on your input, will give you what tags are being used on the helloworld.rs.
-For example, inputing python and selecting your seniority (or none), it will look through all the ads and fetch the tags from them.
-After that, it will create a graph with the count of found items.
-Alsongside with pdf-splitter, this project was also made for the SCS (Specialized Computer Systems) course</description>
+      <description>A tool that, based on your input, will give you what tags are being used on the helloworld.rs.&#xA;For example, inputing python and selecting your seniority (or none), it will look through all the ads and fetch the tags from them.&#xA;After that, it will create a graph with the count of found items.&#xA;Alsongside with pdf-splitter, this project was also made for the SCS (Specialized Computer Systems) course</description>
     </item>
     <item>
       <title>nsp</title>
       <link>https://tunalad.github.io/projects/nsp/</link>
       <pubDate>Thu, 30 Nov 2023 18:52:53 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/nsp/</guid>
-      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.
-Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.
-Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.
-usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
+      <description>A command-line tool for searching and reading the Bible in the new Serbian translation.&#xA;Fork of Luke Smith&amp;rsquo;s kjv fork with some changes made for setting up other translations.&#xA;Repository also comes with a web scraper that scraps the whole bible from BibleGateway&amp;rsquo;s website, which is what I used to get the NSP bible.&#xA;usage: nsp [flags] [reference...] -l list books -r random verse -W no line wrap -h show help Reference types: &amp;lt;Book&amp;gt; Individual book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt; Individual chapter of a book &amp;lt;Book&amp;gt;:&amp;lt;Chapter&amp;gt;:&amp;lt;Verse&amp;gt;[,&amp;lt;Verse&amp;gt;].</description>
     </item>
     <item>
       <title>arch-repo</title>
       <link>https://tunalad.github.io/projects/arch-repo/</link>
       <pubDate>Mon, 20 Nov 2023 23:26:21 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/arch-repo/</guid>
-      <description>Not necessarily a project, but something that I want to share here.
-I have my own Arch Linux repository, where I put tools that I wrote, tools that I forked and made changes and older versions of some tools.
-List of the packages can be found here.
-To add this repository to your own system, add this to your /etc/pacman.conf
-[tunalad] SigLevel = Optional DatabaseOptional Server = https://tunalad.github.io/arch-repo/$arch </description>
+      <description>Not necessarily a project, but something that I want to share here.&#xA;I have my own Arch Linux repository, where I put tools that I wrote, tools that I forked and made changes and older versions of some tools.&#xA;List of the packages can be found here.&#xA;To add this repository to your own system, add this to your /etc/pacman.conf&#xA;[tunalad] SigLevel = Optional DatabaseOptional Server = https://tunalad.github.io/arch-repo/$arch </description>
     </item>
     <item>
       <title>weatherman</title>
       <link>https://tunalad.github.io/projects/weatherman/</link>
       <pubDate>Fri, 10 Nov 2023 22:31:15 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/weatherman/</guid>
-      <description>I don&amp;rsquo;t have any screenshots for this app because I don&amp;rsquo;t have Android Studio installed. Yes, I could install it, but the tool is massive and I have no interest in writing Android apps. Android Studio is also a massive resources hog, so I&amp;rsquo;d prefert to not have it on my system.
-This post exists for the future me to update with the app&amp;rsquo;s explanation and images. How far in the future?</description>
+      <description>I don&amp;rsquo;t have any screenshots for this app because I don&amp;rsquo;t have Android Studio installed. Yes, I could install it, but the tool is massive and I have no interest in writing Android apps. Android Studio is also a massive resources hog, so I&amp;rsquo;d prefert to not have it on my system.&#xA;This post exists for the future me to update with the app&amp;rsquo;s explanation and images. How far in the future?</description>
     </item>
     <item>
       <title>About</title>
       <link>https://tunalad.github.io/about/</link>
       <pubDate>Fri, 03 Nov 2023 00:43:39 +0100</pubDate>
       <guid>https://tunalad.github.io/about/</guid>
-      <description>About this website Purpose of this website is to be like a slightly expanded resume, showcasing my projects &amp;amp; approach on how I go about making stuff.
-Another plan for this site is to have like a &amp;ldquo;blog&amp;rdquo; section. It won&amp;rsquo;t necessarily be like actual blogging, but some minor Linux setting up stuff, or something like cheatsheets for some tools that I use.
-As for the technical stuff about the website, it was made with Hugo and a microscopic amount of JavaScript.</description>
+      <description>About this website Purpose of this website is to be like a slightly expanded resume, showcasing my projects &amp;amp; approach on how I go about making stuff.&#xA;Another plan for this site is to have like a &amp;ldquo;blog&amp;rdquo; section. It won&amp;rsquo;t necessarily be like actual blogging, but some minor Linux setting up stuff, or something like cheatsheets for some tools that I use.&#xA;As for the technical stuff about the website, it was made with Hugo and a microscopic amount of JavaScript.</description>
     </item>
   </channel>
 </rss>

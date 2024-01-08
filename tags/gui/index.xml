@@ -13,27 +13,21 @@
       <link>https://tunalad.github.io/projects/pdf-splitter/</link>
       <pubDate>Thu, 09 Nov 2023 22:33:05 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/pdf-splitter/</guid>
-      <description>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems
-Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.
-1. Usage The process is straightforward: locate a document and load it. Upon loading, each page of the document is converted into an image (as depicted above).</description>
+      <description>PDF-splitter is a user-friendly GUI tool designed to extract pages from a PDF document. GUI part was done via Qt, so (in theory) it should work on all systems&#xA;Originally developed as a project for the SCS (Specialized Computer Systems) course, it continues to receive occasional updates.&#xA;1. Usage The process is straightforward: locate a document and load it. Upon loading, each page of the document is converted into an image (as depicted above).</description>
     </item>
     <item>
       <title>lixling</title>
       <link>https://tunalad.github.io/projects/lixling/</link>
       <pubDate>Fri, 10 Nov 2023 22:24:24 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/lixling/</guid>
-      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.
-The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.
-1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:
-Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
+      <description>Lixling: A minimalistic plugin manager for Lite XL, inspired by vim-plug.&#xA;The goal of this project was to create a small and straightforward plugin manager for Lite XL, free from dependencies on external Lua modules or programs (except for git), ensuring seamless integration with the text editor.&#xA;1. Usage 1.2 Commands Let&amp;rsquo;s start by unraveling the commands:&#xA;Command Description Lixling: Install Installs listed plugins Lixling: Update Updates listed plugins Lixling: Upgrade Updates Lixling itself Lixling: Clear &amp;ldquo;Exiles&amp;rdquo; unlisted plugins Here&amp;rsquo;s a quick breakdown:</description>
     </item>
     <item>
       <title>weatherman</title>
       <link>https://tunalad.github.io/projects/weatherman/</link>
       <pubDate>Fri, 10 Nov 2023 22:31:15 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/weatherman/</guid>
-      <description>I don&amp;rsquo;t have any screenshots for this app because I don&amp;rsquo;t have Android Studio installed. Yes, I could install it, but the tool is massive and I have no interest in writing Android apps. Android Studio is also a massive resources hog, so I&amp;rsquo;d prefert to not have it on my system.
-This post exists for the future me to update with the app&amp;rsquo;s explanation and images. How far in the future?</description>
+      <description>I don&amp;rsquo;t have any screenshots for this app because I don&amp;rsquo;t have Android Studio installed. Yes, I could install it, but the tool is massive and I have no interest in writing Android apps. Android Studio is also a massive resources hog, so I&amp;rsquo;d prefert to not have it on my system.&#xA;This post exists for the future me to update with the app&amp;rsquo;s explanation and images. How far in the future?</description>
     </item>
   </channel>
 </rss>
