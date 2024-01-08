@@ -15,6 +15,12 @@ Oh yeah, I'm also an artist! This page will focus only on the tech related stuff
 
 ---
 
+## Notable projects
+
+{{< projects onlyNotable="true" >}}
+
+---
+
 ## External links
 
 {{< external >}}
