@@ -11,7 +11,7 @@ Hey there, welcome to my website! I'm just a dude that likes to make stuff that 
 
 You can check out stuff that I made on the [projects page](/projects). And if you're interested in my "history" of development, check out the [about page](/about).
 
-Oh yeah, I'm also an artist! This page will focus only on the tech related stuff, so for the music and drawing stuff you can go [here](https://tunalad.tumblr.com/).
+Oh yeah, I'm also an artist! This page will focus only on the tech related stuff, so for the music and drawing stuff you can go [here](https://tunalad.indie.af/).
 
 ---
 
