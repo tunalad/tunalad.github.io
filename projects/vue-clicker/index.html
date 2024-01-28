@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-us" data-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>vue-clicker | Novica&#39;s Website</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/skills.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/menu.css" />
+        <link rel="stylesheet" href="/css/code.css" />
+    </head>
+
+    <body>
+        
+        <nav>
+            <ul class="menu" style="margin: 0">
+                [ 
+                <li>
+                    <a
+                        class=""
+                        href="/"
+                    >
+                        Home
+                    </a>
+                </li>
+                  | 
+                <li>
+                    <a
+                        class=""
+                        href="/about"
+                    >
+                        About
+                    </a>
+                </li>
+                  | 
+                <li>
+                    <a
+                        class=""
+                        href="/projects"
+                    >
+                        Projects
+                    </a>
+                </li>
+                  | 
+                <li>
+                    <a
+                        class=""
+                        href="mailto:arsic.novica00@gmail.com"
+                    >
+                        Contact
+                    </a>
+                </li>
+                 ]
+            </ul>
+            <hr />
+        </nav>
+    </body>
+</html>
+
+
+<main>
+    <h1 class="post-header">
+        vue-clicker<sup>[web, game]</sup>
+    </h1>
+    <div style="text-align: center">
+        
+
+        <div>
+            [ <a href="https://github.com/tunalad/vue-clicker" target="_blank">GitHub</a>  |
+            <a href="https://tunalad.github.io/vue-clicker/" target="_blank">Live</a>
+            ]
+        </div>
+
+        <ul class="tech-list">
+            
+            <li class="tech-item">vue 
+            <li class="tech-item">javascript </li>
+        </ul>
+    </div>
+    <p>A <a href="https://orteil.dashnet.org/cookieclicker">Coockie Clicker</a> clone written with Vue, where you make Vue apps insead of cookies!</p>
+<p><img src="/images/vue-clicker/deep-in-game.png" alt="/images/vue-clicker/deep-in-game.png" title="/images/vue-clicker/deep-in-game.png" />
+</p>
+<h2 id="1-cookie-clicker">1. Cookie Clicker</h2>
+<p>Cookie Clicker is a game about making an absurd amount of cookies. You start by clicking the cookie yourself, then you start purchasing cookie makers (grandmas, farms, factories) and upgrades, speeding up the process of making cookies. There is a lot more to this game, but the core of the game are the buildings and upgrades for them.</p>
+<p>This clone isn&rsquo;t as complicated as the original game, at the moment I have just implemented the cookie makers.</p>
+<p>And instead of making cookies, we&rsquo;re making Vue projects! So for the buildings, instead of grandmas, farms and factories, you buy developers that use different operating systems (Windows, Mac, Ubuntu, Arch users).</p>
+<h2 id="2-auto-clickers">2. Auto-clickers</h2>
+<p>There&rsquo;s three different states autoclicking can be in: early game, mid game, and &ldquo;slow mode&rdquo;. All of these modes affect <code>setInterval</code> function, changing it&rsquo;s speed or incrementation value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">startAutoclicker</span>(<span style="color:#a6e22e">cps</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">autoClick</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">increment</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">tabbedIn</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cps</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>) <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">cps</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="21-early-game">2.1 Early game</h3>
+<p>Early game has the simplest implementation. Game always increments by 1 and calculates <code>speed</code> based on what CPS (clicks per second) we have, <code>speed</code> being the delay we give <code>setInterval</code>.</p>
+<p>I will just mention the timing and incrementing stuff in this post. For more details, check out the whole file <a href="https://github.com/tunalad/vue-clicker/blob/master/src/store.js">here</a>.</p>
+<h3 id="22-mid-game">2.2 Mid game</h3>
+<p>Mid game happens when we do more than 100CPS. We cap the <code>speed</code> 10 and calculate the incrementation value. We take the current CPS, multiply it to our <code>speed</code> and divide by 1 second.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">startAutoclicker</span>(<span style="color:#a6e22e">cps</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">tabbedIn</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">cps</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>) <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">cps</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">increment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calcClicks</span>(<span style="color:#a6e22e">cps</span>, <span style="color:#ae81ff">10</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> { ... }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Sadly this implementation can also return decymal numbers, which makes ugly numbers and breaks the accuracy of the clicks made. But at that point the game is going pretty fast, so it&rsquo;s not really something that players can notice.</p>
+<h3 id="23-slow-mode">2.3 &ldquo;Slow mode&rdquo;</h3>
+<p>This mode kicks in whenever we focus away from the game, either by alt-tabbing or opening the console. What happens is, we slow down the incrementation to 5 seconds, and use the same function we use for mid game state. We calculate based on our CPS how many clicks would happen in the span of those 5 seconds.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">calcClicks</span>(<span style="color:#a6e22e">cps</span>, <span style="color:#a6e22e">ms</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">cps</span> <span style="color:#f92672">*</span> (<span style="color:#a6e22e">ms</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">startAutoclicker</span>(<span style="color:#a6e22e">cps</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">tabbedIn</span>) { ... }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Slow state started due to window not being focused.&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">increment</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calcClicks</span>(<span style="color:#a6e22e">cps</span>, <span style="color:#ae81ff">5000</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>I did also plan on implementing something like an &ldquo;away mode&rdquo;, where we calculate the time between the last save and the time we came back to the game. So if you leave the game for like 5 days, we increment the clicks based on that time. Tho I think this feature is a little bit over the top for something people won&rsquo;t spend more than 10 minutes on it I guess. Plus the problem with dealing with big numbers isn&rsquo;t what I feel like dealing for this project</p>
+<h2 id="3-state-saving">3. State saving</h2>
+<p>All the data related stuff I mentioned so far is stored insite a simple state manager. Clicks count, amount of buildings we have, etc.
+I took the lazy approach and just threw everything inside the <code>localStorate</code> and called it a day.</p>
+<p>Besides the save button at the top of the screen, game auto-saves every 5 minutes. Game also saves whenever you buy a new clicker. &ldquo;Slow mode&rdquo;, every time it increments, it will also save the state</p>
+
+</main>
+
+  <footer>
+  
+  <hr/>
+  © Novica 2024
+  
+  </footer>
+  </body>
+</html>
+

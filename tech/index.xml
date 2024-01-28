@@ -6,8 +6,22 @@
     <description>Recent content in Tech on Novica&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Nov 2023 18:52:53 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2024 18:17:21 +0100</lastBuildDate>
     <atom:link href="https://tunalad.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript</title>
+      <link>https://tunalad.github.io/tech/javascript/</link>
+      <pubDate>Tue, 23 Jan 2024 18:17:21 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>vue</title>
+      <link>https://tunalad.github.io/tech/vue/</link>
+      <pubDate>Tue, 23 Jan 2024 18:17:21 +0100</pubDate>
+      <guid>https://tunalad.github.io/tech/vue/</guid>
+      <description></description>
+    </item>
     <item>
       <title>beautiful-soup</title>
       <link>https://tunalad.github.io/tech/beautiful-soup/</link>
@@ -27,20 +41,6 @@
       <link>https://tunalad.github.io/tech/typescript/</link>
       <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
       <guid>https://tunalad.github.io/tech/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>vue</title>
-      <link>https://tunalad.github.io/tech/vue/</link>
-      <pubDate>Fri, 10 Nov 2023 23:21:51 +0100</pubDate>
-      <guid>https://tunalad.github.io/tech/vue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>javascript</title>
-      <link>https://tunalad.github.io/tech/javascript/</link>
-      <pubDate>Fri, 10 Nov 2023 23:19:51 +0100</pubDate>
-      <guid>https://tunalad.github.io/tech/javascript/</guid>
       <description></description>
     </item>
     <item>

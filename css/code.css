@@ -1,0 +1,13 @@
+:not(pre) > code {
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: var(--inline-code);
+    background-color: var(--inline-code-bg);
+}
+
+pre {
+    padding: 0.5rem;
+    border-radius: 5px;
+    overflow: auto;
+    white-space: pre-wrap;
+}

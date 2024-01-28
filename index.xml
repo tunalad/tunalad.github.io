@@ -6,7 +6,7 @@
     <description>Recent content in Home on Novica&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Nov 2023 00:34:14 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2024 18:17:21 +0100</lastBuildDate>
     <atom:link href="https://tunalad.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vue-kanban</title>
@@ -21,6 +21,13 @@
       <pubDate>Thu, 09 Nov 2023 22:02:51 +0100</pubDate>
       <guid>https://tunalad.github.io/projects/neft/</guid>
       <description>NeFT (New From Template) is a simple command-line tool that allows you to create new files using pre-made templates.&#xA;I developed this tool during my transition to a more CLI based workflow when I found myself missing the convenience of the Create New option in GUI file managers.&#xA;1. Usage NeFT offers various options, allowing you to customize your file creation experience. You can choose to draw icons, display the full file path, and sort files in the menu based on your preferences.</description>
+    </item>
+    <item>
+      <title>vue-clicker</title>
+      <link>https://tunalad.github.io/projects/vue-clicker/</link>
+      <pubDate>Tue, 23 Jan 2024 18:17:21 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/vue-clicker/</guid>
+      <description>A Coockie Clicker clone written with Vue, where you make Vue apps insead of cookies!&#xA;1. Cookie Clicker Cookie Clicker is a game about making an absurd amount of cookies. You start by clicking the cookie yourself, then you start purchasing cookie makers (grandmas, farms, factories) and upgrades, speeding up the process of making cookies. There is a lot more to this game, but the core of the game are the buildings and upgrades for them.</description>
     </item>
     <item>
       <title>PDF-splitter</title>

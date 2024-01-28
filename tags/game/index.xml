@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on Novica&#39;s Website</title>
+    <link>https://tunalad.github.io/tags/game/</link>
+    <description>Recent content in game on Novica&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jan 2024 18:17:21 +0100</lastBuildDate>
+    <atom:link href="https://tunalad.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue-clicker</title>
+      <link>https://tunalad.github.io/projects/vue-clicker/</link>
+      <pubDate>Tue, 23 Jan 2024 18:17:21 +0100</pubDate>
+      <guid>https://tunalad.github.io/projects/vue-clicker/</guid>
+      <description>A Coockie Clicker clone written with Vue, where you make Vue apps insead of cookies!&#xA;1. Cookie Clicker Cookie Clicker is a game about making an absurd amount of cookies. You start by clicking the cookie yourself, then you start purchasing cookie makers (grandmas, farms, factories) and upgrades, speeding up the process of making cookies. There is a lot more to this game, but the core of the game are the buildings and upgrades for them.</description>
+    </item>
+  </channel>
+</rss>
