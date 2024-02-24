@@ -40,7 +40,7 @@ My Linux journey kicked off when I made the shift to Arch. Windows was slowing d
 ## Technical skills
 
 For this section, I've split my technical skills in three groups. These reflect my **confidence level**, rather than my actual skill with technology.
-So it doesn't mean that my skills with Python or JavaScript are advanced, it just means that I'm pretty confident with it.
+So it doesn't mean that my skills with Python or JavaScript are advanced, it just means that I'm pretty confident with it and I believe that I can get some job done pretty quickly.
 
 ### Advanced
 
@@ -54,7 +54,6 @@ JavaScript
 
 {{< tech-skills "lv-mid" >}}
 Vue
-Godot
 Lua
 Git
 C/C++
@@ -70,4 +69,5 @@ CSS
 TypeScript
 Django
 Ruby
+Godot
 {{</tech-skills>}}
