@@ -3,8 +3,8 @@
 <main>
     <ul class="tags">
         <li><a href="javascript:void(0)" onclick="removeHash()">all</a></li>
-        {{ range site.Taxonomies.tags }} |
-        <li><a href="#{{.Page.Title}}">{{ .Page.Title }}</a></li>
+        {{ range $tag, $taxonomy := site.Taxonomies.tags }}
+            | <li><a href="#{{ lower $tag }}">{{ lower $tag }}</a></li>
         {{ end }}
         <small class="post-count" title="projects count">
             {{ $nonDraftPosts := where .Site.RegularPages "Draft" "==" false }}

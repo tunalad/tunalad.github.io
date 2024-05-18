@@ -1,14 +1,14 @@
 +++
 title = 'vue-minesweeper'
-description = "True to the original Minesweeper clone (in terms of rules, not looks)"
+description = "Just your average Minesweeper clone"
 date = 2024-05-18T19:42:55+02:00
 draft = false
-tags = ["web", "game"] # cli, gui, tui, web
+tags = ["web", "game"] # cli, gui, tui, web, game
 tech = ["vue", "javascript"] # tech used for the project
 weight = 28
 notable = true
 github = "https://github.com/tunalad/vue-minesweeper"
-live = "https://github.com/tunalad/vue-minesweeper"
+live = "https://github.com/tunalad/vue-minesweeper/"
 +++
 
 A minesweeper clone, inspired by [Minesweeper.Online](https://minesweeper.online) version of the game.
@@ -29,3 +29,5 @@ And just like the minesweeper clone I mentioned earlier, I have also included a 
 I don't know what formula is used on `Minesweeper.Online`, so I decided to just go with `X*Y/pi` (and we round that number down). It makes our clone easier, but the number of mines isn't too drastic. `11x11` board on `Minesweeper.Online` will limit you to 46 mines max, while our solution gives us `38.51549622823867125607` (that we just round up to 38)
 
 ![Board on custom 10x30 difficutly](/images/vue-minesweeper/game-custom.png)
+
+So yeah, that's about it
