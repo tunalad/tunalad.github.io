@@ -11,7 +11,7 @@ github = "https://github.com/tunalad/vue-minesweeper"
 live = "https://github.com/tunalad/vue-minesweeper"
 +++
 
-A minesweeper clone, inspired by [Minesweeper.Online](https://minesweeper.online/) version of the game.
+A minesweeper clone, inspired by [Minesweeper.Online](https://minesweeper.online) version of the game.
 
 ![State of the page when we first open the page up](/images/vue-minesweeper/game-easy.png)
 
