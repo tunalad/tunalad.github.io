@@ -1,6 +1,6 @@
 +++
 title = 'qthon'
-description = "Quake 1 WAD editor"
+description = "Quake 1 WAD editor inspired by TexMex workflow"
 date = 2024-06-12T20:02:28+02:00
 draft = false
 tags = ["gui"] # cli, gui, tui, web, game
@@ -76,7 +76,7 @@ Since we just deleted the old texture and renamed the new one the same thing, we
 
 (map has interactive lights, so I decided to just take the screenshot without any light going on)
 
-And this about covers the most commong stuff functionalities you'll do.
+And this about covers the most common functionalities you'll use.
 
 ## Some other stuff we haven't covered:
 

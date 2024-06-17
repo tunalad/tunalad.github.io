@@ -5,7 +5,7 @@ description = "Extract specific pages from PDF documents."
 tags = ["gui"]
 tech = ["python", "qt"]
 weight = 30
-notable = true
+notable = false
 github = "https://github.com/tunalad/pdf-splitter"
 +++
 
