@@ -8,7 +8,7 @@ tech = ["vue", "javascript"] # tech used for the project
 weight = 28
 notable = true
 github = "https://github.com/tunalad/vue-minesweeper"
-live = "https://github.com/tunalad/vue-minesweeper/"
+live = "https://tunalad.github.io/vue-minesweeper"
 +++
 
 A minesweeper clone, inspired by [Minesweeper.Online](https://minesweeper.online) version of the game.
