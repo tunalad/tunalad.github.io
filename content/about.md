@@ -47,20 +47,17 @@ So it doesn't mean that my skills with Python or JavaScript are advanced, it jus
 {{< tech-skills "lv-adv" >}}
 Linux
 Python
-JavaScript
 {{</tech-skills>}}
 
 ### Intermediate
 
 {{< tech-skills "lv-mid" >}}
+JavaScript
 Vue
 Lua
 Git
-C/C++
 SQL
 Java
-HTML
-CSS
 {{</tech-skills>}}
 
 ### Basic
@@ -68,6 +65,8 @@ CSS
 {{< tech-skills "lv-bas" >}}
 TypeScript
 Django
+C/C++
 Ruby
+Go
 Godot
 {{</tech-skills>}}
