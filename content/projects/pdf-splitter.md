@@ -4,7 +4,7 @@ date = 2023-11-09T22:33:05+01:00
 description = "Extract specific pages from PDF documents."
 tags = ["gui"]
 tech = ["python", "qt"]
-weight = 30
+weight = 41
 notable = false
 github = "https://github.com/tunalad/pdf-splitter"
 +++

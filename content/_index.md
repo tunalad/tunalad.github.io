@@ -26,4 +26,5 @@ Oh yeah, I'm also an artist! This page will focus only on the tech related stuff
 {{< external >}}
 [github](https://github.com/tunalad)
 [email](mailto:arsic.novica00@gmail.com)
+[artist page](https://tunalad.xyz/)
 {{< /external >}}
